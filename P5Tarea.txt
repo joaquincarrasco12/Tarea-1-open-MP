@@ -1,0 +1,5 @@
+1) Para Greatest common divisior, si se puede utilizar reduccion paralela, ya que esta es asociativa y conmutativa.
+2)Para multiplicacion de matrices 2x2, es posible usar la reduccion paralela, ya que es asociativa. En este caso no es conmutativo, pero OpenMp necesita combinar resultados consistentemente, por lo que si es posible implementarlo.
+3) La multiplicacion compleja es asociativa y conmutativa, por lo que si es valida la reduccion paralela.
+4)el producto de cauteriniones es asociativo, pero no conmutativo. En el caso de las matrices la asociatividad es suficiente, pero en este caso la falta de conmutatividad puede producir resultados dependientes del orden.
+5) para la operación dada no se puede utilziar la reduccion paralela, ya que no cumple la asociatividad.
